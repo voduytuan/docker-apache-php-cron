@@ -9,5 +9,6 @@ RUN chmod 0644 /etc/cron.d/crontab
 ADD cronjob.php /var/www/site/cronjob.php
 RUN chmod 0755 /var/www/site/cronjob.php
 
+RUN touch /var/log/cron.log
 
 
