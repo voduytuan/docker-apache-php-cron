@@ -1,0 +1,7 @@
+# * * * * * root /var/www/script.sh >> /var/log/cron.log 2>&1
+
+* * * * * root /usr/bin/php -q -f /var/www/site/cronjob.php >> /var/log/cron.log 2>&1
+
+#* * * * * root echo "Hello world" >> /var/log/cron.log 2>&1
+
+
