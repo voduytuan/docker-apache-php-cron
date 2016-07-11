@@ -8,8 +8,7 @@ In docker image, The crontab file is put at "/etc/cron.d/crontab" and php files 
 `... -v /path/to/your/crontab:/etc/cron.d/crontab ... -v /path/to/your/php/cron:/var/www/site/cronjob.php..."
 
 ## Example ##
-```docker run -ti -d \
-  -v /path/to/website:/var/www/site \
-  -v /path/to/my/crontab:/etc/cron.d/crontab \
-  -v /path/to/my/cronjob.php:/var/www/site/cronjob.php \
-  voduytuan/docker-apache-php-cron```
+```docker run -ti -d -v /path/to/website:/var/www/site -v /path/to/my/crontab:/etc/cron.d/crontab -v /path/to/my/cronjob.php:/var/www/site/cronjob.php voduytuan/docker-apache-php-cron```
+
+## Docker Hub ##
+Docker image hosted at: [https://hub.docker.com/r/voduytuan/docker-apache-php-cron/]
