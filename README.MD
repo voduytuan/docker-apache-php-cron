@@ -11,6 +11,7 @@ Docker image hosted at: [https://hub.docker.com/r/voduytuan/docker-apache-php-cr
 ## Important ##
 - Do not try to mount your custom `crontab` file, because the problem of file owner will prevent cron run your crontab file. If you want to change the cron rules, just create your custom `crontab.sh` file and mount (-v) to `/var/www/crontab.sh` in docker run command.
 - In case you want to use your crontab.sh, do not forget to CHMOD 0755 (executable) for your `crontab.sh` file.
+- If you want to use custom `crontab` file, create and build your own image!!!
 
 ## Example ##
 ```
