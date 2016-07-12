@@ -1,10 +1,4 @@
 # Example run with bash shell
-# * * * * * root /var/www/script.sh >> /var/log/cron.log 2>&1
-
-# Example run with PHP
-* * * * * root /usr/bin/php -q -f /var/www/site/cronjob.php >> /var/log/cron.log 2>&1
-
-# Example to test
-#* * * * * root echo "Hello world" >> /var/log/cron.log 2>&1
+* * * * * root /var/www/crontab.sh
 
 
